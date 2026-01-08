@@ -50,5 +50,5 @@ compiler_directives = {
 
 if __name__ == "__main__":
     setup(
-        ext_modules=cythonize(cy_extensions, language_level=3, compiler_directives=compiler_directives),
+        ext_modules=cythonize(cy_extensions, language_level=3, compiler_directives=compiler_directives, include_package_data=True),
     )
